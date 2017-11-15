@@ -23,6 +23,49 @@
           padding-top: 56px;
         }
       }
+	  
+	  .onepage-section{
+		padding-left: 50px;
+		padding-right: 50px;
+		padding-bottom: 80px;
+		padding-top:80px;
+		
+		
+	  }
+	  
+	  .project-block{
+		padding:20px;
+		background:#000000;
+		text-align:center;
+		margin:0px;
+	  }
+	  
+	  #div-home{
+		background-color:#343a40; height:500px;
+	  }
+	  #div-projects{
+		background:#222222;
+	  }
+	  #div-robotics{
+		background:#000000;
+	  }
+	  #div-about{
+		background:#353b41; height:500px;
+	  }
+	  #div-contact{
+		background:#343a40; height:500px;
+	  }
+	  
+	  .textcolor-white{
+		color: #ECEFF1;
+	  }
+	  
+	  .img-border{
+		padding-top=20px;
+		padding-bottom=20px;
+		
+		margin-top=20px;
+	  }
 
     </style>
 
@@ -31,27 +74,30 @@
   <body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top navbar-mycolor">
       <div class="container">
-        <a class="navbar-brand" href="#">I am Chandima :v</a>
+        <a class="navbar-brand" href="#">chandimab.github.io</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home
+              <a class="nav-link" href="#div-home">Home
                 <span class="sr-only">(current)</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Projects</a>
+              <a class="nav-link" href="#div-projects">Projects</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link" href="#div-robotics">Robotics</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#div-about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#div-contact">Contact</a>
             </li>
           </ul>
         </div>
@@ -59,15 +105,77 @@
     </nav>
 
     <!-- Page Content -->
-    <div class="container">
+    <div class="container-fluid onepage-section" id="div-home">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h1 class="mt-5">Under Construction :)</h1>
-          <p class="lead"></p>
-          <ul class="list-unstyled">
-            <li><a href="http://sausecode.com">SAUSECODE.COM</li>
-            <li></li>
-          </ul>
+          <div>
+		  <p class="textcolor-white">Under Construction :)</p>
+		  </div>
+		  
+        </div>
+      </div>
+    </div>
+	
+	<div class="container-fluid onepage-section" id="div-projects">
+      <div class="row">
+        <div class="col textcolor-white project-block">
+			<h5>Arduino Nano Powered Remote Controlled Flight From Scratch</h5>
+			<p class="textcolor-white"><br>Here is a small project i have done in after A/Ls free time, a fully home made remote controlled flight using Styrofoam. Both flight and remote controller was powered by arduino nano, and two nRF24L01+ transceiver modules which manufactures specifies that it could obtain 1km range. Two 3 cell LiPo (Lithium Polymer) batteries were used as power resources. 1000kv brushless motor with 30A esc were used to generate trust for the flight and two micro servos for main wing elevators.</p>
+			<p class=""textcolor-white">https://github.com/chandimab/arduino-remote-controlled-flight</p>
+		</div>
+		<div class="col textcolor-white project-block">project02</div>
+		<div class="col textcolor-white project-block">project03</div>
+      </div>
+	  
+	  <div class="row">
+        <div class="col textcolor-white project-block">project04</div>
+		<div class="col textcolor-white project-block">project05</div>
+		<div class="col textcolor-white project-block">project06</div>
+      </div>
+	  
+	  <div class="row">
+        <div class="col textcolor-white project-block"></div>
+		<div class="col textcolor-white project-block"></div>
+		<div class="col textcolor-white project-block"></div>
+      </div>
+    </div>
+	
+	<div class="container-fluid onepage-section" id="div-robotics">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          
+		  <h5 class="textcolor-white">Remote Controlled Battle-bot for UWU Robot Battle 2016</h5>
+		  <p class="textcolor-white">Remote controlled battle-bot from scratch.<br>Remote controller and Robot's receiver powered by arduino nanos.<br></p>
+		  <h4 class="textcolor-white">DustyAlpha<br></h4>
+		  <div class="img-border"><br><img src="https://i.stack.imgur.com/4lkWu.jpg"><br></div>
+		  <p class="textcolor-white"><br>Source Code : <a href="https://github.com/chandimab/arduino-remote-controlled-battlebot">https://github.com/chandimab/arduino-remote-controlled-battlebot</a></p>
+        </div>
+      </div>
+    </div>
+	
+	
+	<div class="container-fluid onepage-section" id="div-about">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          
+		  
+		  
+        </div>
+      </div>
+    </div>
+	
+	<div class="container-fluid onepage-section" id="div-contact">
+      <div class="row">
+        <div class="col text-center">
+			<p class="textcolor-white">email: chandi2398@gmail.com</p>		  
+        </div>
+		
+		<div class="col text-center">
+			<p class="textcolor-white">web: sausecode.com</p>		  
+        </div>
+		
+		<div class="col text-center">
+			<p class="textcolor-white">git: github.com/chandimab</p>		  
         </div>
       </div>
     </div>
