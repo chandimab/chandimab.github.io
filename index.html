@@ -17,6 +17,7 @@
     <style>
       body {
         padding-top: 54px;
+		background-color:#000000;
       }
       @media (min-width: 992px) {
         body {
@@ -76,8 +77,13 @@
 	  
 	  #div-home{
 		background-color:#000000;
-		height:100vh;
-		background:url("graphics/home-01.jpg");
+		//height:100vh;
+		//background:url("graphics/home-01.jpg");
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		
 	  }
 	  #div-projects{
 		background:#111111;
@@ -101,8 +107,20 @@
 		padding-bottom=20px;
 		
 		margin-top=20px;
+		
 	  }
 
+	  
+	  img {
+			max-width:100%;
+			height:auto;
+		}
+	  
+	  .thumbnail{
+	  border:0;
+    box-shadow:0;
+    border-radius:0;
+	}
     </style>
 
   </head>
@@ -141,18 +159,10 @@
     </nav>
 
     <!-- Page Content -->
-    <div class="container-fluid onepage-section" id="div-home">
-      
-	  <div class="row">
-		<div class="col text-center">
-			<p class="textcolor-white">
-			<br><br><br><br><br><br><br><br>
-			<font size="4em">explore my git page!</font></p><br><br>
-		</div>
-	  </div>
-	  
-	  
-    </div>
+    <!--div class="container-fluid onepage-section" id="div-home">
+	 
+    </div-->
+	<img src="graphics/home-01.jpg" id="div-home"></img>
 	
 	<div class="container-fluid onepage-section" id="div-projects">
 	  <div class="row">
@@ -247,7 +257,7 @@
 		  <h5 class="textcolor-white">Remote Controlled Battle-bot for UWU Robot Battle 2016</h5>
 		  <p class="textcolor-white">Remote controlled battle-bot from scratch.<br>Remote controller and Robot's receiver powered by arduino nanos.<br></p>
 		  <h4 class="textcolor-white">DustyAlpha<br></h4>
-		  <div class="img-border"><br><img src="https://i.stack.imgur.com/4lkWu.jpg" class="img-responsive"><br></div>
+		  <br><img src="https://i.stack.imgur.com/4lkWu.jpg" class="img-thumbnail"><br>
 		  <p class="textcolor-white"><br>Source Code : <a href="https://github.com/chandimab/arduino-remote-controlled-battlebot">https://github.com/chandimab/arduino-remote-controlled-battlebot</a></p>
         </div>
 		
