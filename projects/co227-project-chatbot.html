@@ -2,22 +2,20 @@
 <html lang="en">
 
   <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="ChatBot - FEeLS UoP">
+    <meta name="author" content="sanoj , chandima , yuvini">
 
-    <title>CO227 Project - ChatBot</title>
+    <title>ChatBot</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
+    <link href="vendor/bootstrap/css/cyborg-bootstrap.min.css" rel="stylesheet">
+		
     <!-- Custom styles for this template -->
     <style>
       body {
         padding-top: 54px;
-		background-color:#000000;
       }
       @media (min-width: 992px) {
         body {
@@ -25,344 +23,487 @@
         }
       }
 	  
-	  .onepage-section{
-		padding-left: 50px;
-		padding-right: 50px;
-		padding-bottom: 80px;
-		padding-top:80px;
-		
+	  .navbar-normal{
+		background-color:rgba(0,0,0,0.75);
+	  }
+	  .navbar-scrolled{
 		
 	  }
 	  
-	  .contactblock{
-		padding:5px;
-		background:#111111;
-		text-align:center;
-		margin:5px;
-	  }
-	  .contactblock:hover{
-		padding:5px;
-		background:#00aa00;
-		text-align:center;
-		margin:5px;
-	  }
-	  
-	  .project-block{
-		padding:20px;
-		background:#000000;
-		text-align:center;
-		margin:5px;
-	  }
-	  .project-block:hover{
-		padding:20px;
-		background:#0000aa;
-		text-align:center;
-		margin:5px;
-	  }
-	  
-	  .robotblock{
-		padding:20px;
-		background:#000000;
-		text-align:center;
-		margin:5px;
-	  }
-	  .robotblock:hover{
-		padding:20px;
-		background:#111111;
-		text-align:center;
-		margin:5px;
-	  }
-	  
-	  
-	  
-	  #div-home{
-		background-color:#000000;
+	  .onepagesection{
 		//height:100vh;
-		//background:url("graphics/home-01.jpg");
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
-		background-size: cover;
-		
-	  }
-	  #project-summery{
-		background:#111111;
-	  }
-	  #project-log{
-		background:#bbbbbb;
-	  }
-	  #div-robotics{
-		background:#000000;
-	  }
-	  #div-about{
-		background:#111111;
-	  }
-	  #div-contact{
-		background:#000000;
+		padding-left:50px;
+		padding-right:50px;
+		padding-top:50px;
+		padding-bottom:50px;
 	  }
 	  
-	  .textcolor-white{
-		color: #ECEFF1;
+	  .sectionhome{
+		//height:100vh;
+		margin-top:20px;
+		background-color:#000000;
 	  }
 	  
-	  .textcolor-logtitle{
-		color: #444444;
+	  #home{
+		height:100vh;
+		//margin-top:-60px;
+		//background-color:#000000;
 	  }
 	  
-	  .img-border{
-		padding-top=20px;
-		padding-bottom=20px;
-		
-		margin-top=20px;
-		
-	  }
-
-	  
-	  img {
-			max-width:100%;
-			height:auto;
-		}
-	  
-	  .thumbnail{
-		  border:0;
-		box-shadow:0;
-		border-radius:0;
-		}
-		
-	
-	.logformat{
-		color: #ECEFF1;
+	  .titlepadding{
+		margin-top:20px;
 		padding:20px;
-		background:#000000;
-		text-align:left;
-		margin:5px;
-	}
-	
-	.c6{
-		text-decoration: underline;
-		font-weight: bold;
-	}
-	
-	
+	  }
+	  .taglinepadding{
+		//padding:20px;
+	  }
+	  
+	  .sectionabout{
+		background-color:#000000;
+	  }
+	  
+	  .sectionvision{
+		background-color:#000018;
+		padding-left:50px;
+		padding-right:50px;
+	  }
+	  
+	  .visionmission{
+		padding:30px;
+	  }
+	  
+	  .sectionevent{
+		background-color:#000000;
+	  }
+	  
+	  .eventblock{
+		//background-color:#004400;
+		//display: inline-block;
+		
+		margin-top:20px;
+		margin-bottom:10px;
+		margin-left:60px;
+		margin-right:60px;
+	  }
+	  .eventdate{
+		background-color:#000001;
+		width:200px;
+		text-align: center;
+		//display:inline-block;
+	  }
+	  .eventdesc-dark{
+		background-color:#111111;
+		//margin-left:10px;
+		//display: block;
+	  }
+	  .eventdesc-light{
+		background-color:#222222;
+		//margin-left:10px;
+		//display: block;
+	  }
+	  .eventtextmonth{
+		text-align: center;
+		padding-top:10px;
+	  }
+	  .eventtextdate{
+		text-align: center;
+		margin-bottom:10px;
+	  }
+	  .eventheader{
+		margin-top:10px;
+	  }
+	  .eventtext{
+	  
+	  }
+	  
+	  .sectionmedia{
+		height:100vh;
+		background-color:#000000;
+	  }
+	  .sectioncommitte{
+		background-color:#000018;
+		
+	  }
+	  
+	  .committemember{
+		padding:20px;
+		margin:10px;
+		background:#000011;
+	  }
+	  .committemember:hover{
+		padding:20px;
+		margin:10px;
+		background:#000044;
+	  }
+	  
+	  
+	  .sectioncontact{
+		height:100vh;
+		background-color:#000000;
+	  }
+	  
+	  .footer{
+		padding-top:30px;
+		padding-bottom:20px;
+		background-color:#000015;
+	  }
     </style>
 	
-			
-			
+	<!--  scroll up button -->
+	<style>
+		#scrollupBtn {
+		  display: none;
+		  position: fixed;
+		  bottom: 20px;
+		  right: 30px;
+		  z-index: 99;
+		  border: none;
+		  outline: none;
+		  background-color: rgba(47, 47, 175,0.4);
+		  color: rgba(80, 80, 237,0.5);
+		  cursor: pointer;
+		  padding: 15px;
+		  border-radius: 15px;
+		}
+
+		#scrollupBtn:hover {
+		  background-color: rgba(47, 47, 175,0.6);
+		  color: rgba(80, 80, 237,0.8);
+		}
+	</style>
+	
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target=".navbar" data-offset="10">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top navbar-mycolor">
+	<!--nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-normal">
       <div class="container">
-        <a class="navbar-brand" href="https://chandimab.github.io/projects/co227-project-chatbot.html">CO227 Project- ChatBot</a>
+        <!--a class="navbar-brand" href="#">Start Bootstrap</a-->
+		<a class="navbar-brand" href="#"><img src="assests/logo-title.png" height="50px">
+		</a>
+		
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#project-overview">Project Overview
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home
                 <span class="sr-only">(current)</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#project-function">Functional Description</a>
-            </li>
-			<li class="nav-item">
-              <a class="nav-link" href="#project-ux-ui">UX/UI</a>
-            </li>
-			<li class="nav-item">
-              <a class="nav-link" href="#project-milestones">Milestones</a>
-            </li>
-			<li class="nav-item">
-              <a class="nav-link" href="#project-conclusion">Conclusion</a>
-            </li>
-			<li class="nav-item">
-              <a class="nav-link" href="#project-log">Log</a>
+              <a class="nav-link" href="#overview">Overview</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#project-team">Team</a>
+              <a class="nav-link" href="#function">Functional Description</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#project-refapi">References and APIs</a>
+			<li class="nav-item">
+              <a class="nav-link" href="#uxui">UX/UI</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link" href="#milestones">Milestones</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link" href="#conclusion">Conclusion</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link" href="#log">Log</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link" href="#team">Team</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link" href="#refapi">References and APIs</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <!-- Page Content -->
-    <!--div class="container-fluid onepage-section" id="div-home">
-	 
-    </div-->
 	
-	<div class="container-fluid onepage-section" id="project-overview">
+
+	
+	<!-- Page Content -->
+	<div class="" id="home">
+		<!-- slider style sheet-->
+		<link rel="stylesheet" href="vendor/bootstrap/css/slider-style.css">
+		<link rel='stylesheet prefetch' href='vendor/bootstrap/css/slider-global.css'>
+		<!-- html markup -->
+		<div id="myCarousel" class="carousel carousel-fade slide sectionhome" data-ride="carousel" data-interval="3000">
+			<div class="carousel-inner" role="listbox">
+			  <div class="item active background a"></div>
+			  <div class="item background b"></div>
+			  <div class="item background c"></div>
+			</div>
+			</div>
+
+			<!--div class="covertext">
+			<div class="col-lg-10" style="float:none; margin:0 auto;">
+			  <h1 class="title">ELINE</h1>
+			  <h3 class="subtitle">A Tidy, Clean, Easy-to-Use, and Responsive Landing Page Template</h3>
+			</div>
+			<div class="col-xs-12 explore">
+			  <a href="#"><button type="button" class="btn btn-lg explorebtn">EXPLORE</button></a>
+			</div-->
+		</div>
+		<!-- slider script -->
+		<script  src="vendor/bootstrap/js/slider-js.js"></script>
+		<!-- bootstrap main script -->
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+		<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
+	
+    </div>
+	
+    <div class="container onepagesection sectionabout" id="overview">
+      <h5 class="titlepadding text-center">Overview</h5>
+    </div>
+	
+	<div class="container-fluid onepagesection sectionvision" id="function">
+      <h5 class="titlepadding text-center">Functional Description</h5>
+	  
+	  
+    </div>
+	
+	<div class="container-fluid onepagesection sectionvision" id="uxui">
+		<h5 class="titlepadding text-center">UX/UI</h5>
+    </div>
+	
+	<div class="container-fluid onepagesection sectionvision" id="milestones">
+      <h5 class="titlepadding text-center">Milestones</h5>
+	  
+    </div>
+	
+	<div class="container-fluid onepagesection sectionvision" id="conclusion">
+      <h5 class="titlepadding text-center">Conclusion</h5>
+  
+    </div>
+	
+	<div class="container-fluid onepagesection sectionevent" id="log">
+		<h5 class="titlepadding text-center">Log</h5>
+		
+		<div class="row eventblock">
+			<div class="col-1 eventdate">
+				<p class="eventtextmonth">2017<br>NOV</p>
+				<h4 class="eventtextdate">07</h4>
+			</div>
+			<div class="col-11 eventdesc-dark">
+				<h6 class="eventheader">Setup botpress.io / First Meeting with the Project owner</h6>
+				<p class="eventtext">Setup botpress.io and deploy  a sample chatbot. The sample bot was not connected to any messaging client. The sample bot perfectly worked.
+				</p>
+				<p>
+				We had our first meeting with the project owner. We discussed about the main requirements of the project. The project owner asked us to provide a comparison of APIs we can use on 13th Nov 2017 (Milestone 0).
+				</p>
+			</div>
+		</div>
+		
+		
+		<div class="row eventblock">
+			<div class="col-1 eventdate">
+				<p class="eventtextmonth">2017<br>NOV</p>
+				<h4 class="eventtextdate">08</h4>
+			</div>
+			<div class="col-11 eventdesc-light">
+				<h6 class="eventheader">Project team meeting</h6>
+				<p class="eventtext">Project team gathered and discussed about the overall structure of the project and the things we need to workout before starting the actual implementation.
+				</p>
+				<p>
+					<ul>
+					<li>DialogFlow API.</li>
+					<li>Nodejs, mysql connection implementation and querying.</li>
+					<li>Moodle database schema/structure.</li>
+					<li>What are the possible user authentication methods we can use.</li>
+					<li>Botpress.io and email services integration.</li>
+					</ul>
+				</p>
+				<br>
+				<h6 class="eventheader">Initial Structure of the Design</h6>
+				<p><img src="assests/logdata/2017-11-08-1.png" width="500px">
+				</p>
+			</div>
+		</div>
+		
+		<div class="row eventblock">
+			<div class="col-1 eventdate">
+				<p class="eventtextmonth">2017<br>NOV</p>
+				<h4 class="eventtextdate">09</h4>
+			</div>
+			<div class="col-11 eventdesc-dark">
+				<h6 class="eventheader">NLTK Natural Language Processing API</h6>
+				<p class="eventtext">
+				<ul>
+					<li>Link <a href="http://www.nltk.org/">http://www.nltk.org/</a></li>
+					<li>Time consuming to develop from scratch.</li>
+					<li>Complexity.</li>
+					</ul>
+				</p>
+				
+				
+				<h6 class="eventheader">DialogFlow Language Processing API</h6>
+				<p class="eventtext">
+				<ul>
+					<li>Link <a href="https://dialogflow.com/">https://dialogflow.com/</a></li>
+					<li>Already built-in features (context and intents).</li>
+					<li>Can focus more on the purpose rather than the design.</li>
+					<li>Can directly connect to chatting clients.</li>
+					</ul>
+				</p>
+				
+				<p class="eventtext">*** Therefore, we have decided to use DialogFlow as for our NLP API.</p>
+			</div>
+		</div>
+		
+		
+		<div class="row eventblock">
+			<div class="col-1 eventdate">
+				<p class="eventtextmonth">2017<br>NOV</p>
+				<h4 class="eventtextdate">14</h4>
+			</div>
+			<div class="col-11 eventdesc-light">
+				<h6 class="eventheader">Change of initial design</h6>
+				<p class="eventtext">Initially we have decided to process the user requests in the botpress nodejs server it self. Since it is very time consuming and unreliable to do the NLP parts ourselves, we have decided to forward the all the input requests to dialogflow api and then extract the relevant parameters from the user request and make relevant actions through the botpress nodejs server.</p>
+				<p>
+				
+				<p class="eventtext">But we found that  we can easily connect the chatting clients directly to the dialogflow api. Therefore, we have changed the initial design of our project and omitted the botpress from the nodejs server since it is unnecessary.
+				</p>
+				<h6 class="eventheader">The Basic Structure</h6>
+				<br>
+				<p><img src="assests/logdata/2017-11-14-2.png" width="600px">
+				</p>
+				
+				
+			</div>
+		</div>
+		
+
+		
+		<div class="row eventblock">
+			<div class="col-1 eventdate">
+				<p class="eventtextmonth">2017<br>NOV</p>
+				<h4 class="eventtextdate">16</h4>
+			</div>
+			<div class="col-11 eventdesc-dark">
+				<h6 class="eventheader">DialogFlow Implementation</h6>
+				<p class="eventtext">
+				<ul><li>Implemented DialogFlow completely without using botpress. Easy to implement and we can integrate it with many platforms</li>
+					<li>Used followUp intents to format the response</li>
+					<li>Docs <a href="http://www.nltk.org/">http://www.nltk.org/</a></li>
+					</ul>
+				</p>
+			</div>
+		</div>
+		
+		
+		<div class="row eventblock">
+			<div class="col-1 eventdate">
+				<p class="eventtextmonth">2017<br>NOV</p>
+				<h4 class="eventtextdate">21</h4>
+			</div>
+			<div class="col-11 eventdesc-light">
+				<h6 class="eventheader">Officially started the project</h6>
+				<p class="eventtext">Upto now we did some background work, and have chosen the most suitable api and methods to use in our bot. From today onwards we will officially start to work on our chat bot InfoBot
+				<p>
+				
+				<p class="eventtext">Step 1: Create intents in DialogFlow api</p>
+				
+			</div>
+		</div>
+		
+		
+
+    </div>
+	
+	
+	<div class="container-fluid onepagesection sectioncommitte" id="team">
+	  <h5 class="titlepadding text-center">Team</h5>
+      
 	  <div class="row">
-		<div class="col text-center">
-			<h3 class="textcolor-white">Project Overview</h3><br><br>
-		</div>
-	  </div>
-	
-	  
-	  <div class="row">
-        <div class="col textcolor-white">
-			<h5></h5>
-			<p class="textcolor-white"><br></p>
-			<p class=""textcolor-white"><a href=""></a></p>
-		</div>
-      </div>
-    </div>
-	
-	<div class="container-fluid onepage-section" id="project-function">
-	 <div class="row">
-		<div class="col text-center">
-			<h3 class="textcolor-white">Functional Description</h3><br><br>
-		</div>
-	  </div>
-	  
-      <div class="row">
-        <div class="col text-center robotblock">
-		  
-		</div>
-
-      </div>
-    </div>
-	
-	<div class="container-fluid onepage-section" id="project-ux-ui">
-	 <div class="row">
-		<div class="col text-center">
-			<h3 class="textcolor-white">UX/UI</h3><br><br>
-		</div>
-	  </div>
-	  
-      <div class="row">
-        <div class="col text-center robotblock">
-		  
-		</div>
-
-      </div>
-    </div>
-
-	<div class="container-fluid onepage-section" id="project-milestones">
-	 <div class="row">
-		<div class="col text-center">
-			<h3 class="textcolor-white">Milestones</h3><br><br>
-		</div>
-	  </div>
-	  
-      <div class="row">
-        <div class="col text-center robotblock">
-		  
-		</div>
-
-      </div>
-    </div>
-	
-	<div class="container-fluid onepage-section" id="project-conclusion">
-	 <div class="row">
-		<div class="col text-center">
-			<h3 class="textcolor-white">Conclusion</h3><br><br>
-		</div>
-	  </div>
-	  
-      <div class="row">
-        <div class="col text-center robotblock">
-		  
-		</div>
-
-      </div>
-    </div>
-	
-	<div class="container-fluid onepage-section" id="project-log">
-		
-		<div class="row">
-			<div class="col text-center">
-				<h3 class="textcolor-logtitle">Log</h3><br><br>
-			</div>
-		  </div>
-		
-		<div class="row">
-			<div class="col">
-			
-			<p class="c2"><span class="c6">07-11-2017</span></p><p class="c2 c3"><span class="c5"></span></p><p class="c2"><span class="c5">Setup botpress.io and deploy &nbsp;a sample chatbot. The sample bot was not connected to any messaging client. The sample bot perfectly worked.</span></p><p class="c2 c3"><span class="c5"></span></p><p class="c2"><span class="c6">07-11-2017</span></p><p class="c2 c3"><span class="c5"></span></p><p class="c2"><span class="c5">We had our first meeting with the project owner. We discussed about the main requirements of the project. The project owner asked us to provide a comparison of APIs we can use on 13th Nov 2017 (Milestone 0).</span></p><p class="c2 c3"><span class="c4"></span></p><p class="c2"><span class="c6">08-11-2018</span></p><p class="c2 c3"><span class="c5"></span></p><p class="c2"><span class="c5">Project team gathered and discussed about the overall structure of the project and the things we need to workout before starting the actual implementation.</span></p><ul class="c13 lst-kix_3nhqqtesfrc9-0 start"><li class="c2 c8"><span class="c5">DialogFlow API.</span></li><li class="c2 c8"><span class="c5">Nodejs, mysql connection implementation and querying.</span></li><li class="c2 c8"><span class="c5">Moodle database schema/structure.</span></li><li class="c2 c8"><span class="c5">What are the possible user authentication methods we can use.</span></li><li class="c2 c8"><span class="c5">Botpress.io and email services integration.</span></li></ul><p class="c2 c3"><span class="c5"></span></p><p class="c2"><span class="c5">The initial design/overall structure of the implementation</span></p><p class="c2"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 303.00px; height: 337.50px;"><img alt="" src="images/image2.png" style="width: 303.00px; height: 337.50px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span></p><p class="c2 c3"><span class="c5"></span></p><p class="c2"><span class="c6">09-11-2017</span></p><p class="c2 c3"><span class="c5"></span></p><p class="c2"><span class="c5">The Natural Language Processing(NLP) APIs Comparison.</span></p><p class="c2 c3"><span class="c5"></span></p><a id="t.13386a41dbea662ccc5cc578e9ff26f2c5e257f7"></a><a id="t.0"></a><table class="c15"><tbody><tr class="c10"><td class="c1" colspan="1" rowspan="1"><p class="c0"><span class="c4">NLTK</span></p><p class="c0"><span>Link: </span><span class="c11"><a class="c12" href="https://www.google.com/url?q=http://www.nltk.org/&amp;sa=D&amp;ust=1511282931461000&amp;usg=AFQjCNHGvvuZHwATwjIs3YFNcoVjAXv39w">http://www.nltk.org/</a></span></p></td><td class="c1" colspan="1" rowspan="1"><p class="c0"><span class="c4">DialogFlow</span></p><p class="c0"><span>Link : </span><span class="c11"><a class="c12" href="https://www.google.com/url?q=https://dialogflow.com/&amp;sa=D&amp;ust=1511282931462000&amp;usg=AFQjCNEqOKTg0vb5_q-cpV8kUFEtjKOnWg">https://dialogflow.com/</a></span></p></td></tr><tr class="c10"><td class="c1" colspan="1" rowspan="1"><p class="c0"><span class="c5">Time consuming to develop from scratch.</span></p></td><td class="c1" colspan="1" rowspan="1"><p class="c0"><span class="c5">Already built-in features (context and intents).</span></p></td></tr><tr class="c10"><td class="c1" colspan="1" rowspan="1"><p class="c0"><span class="c5">Complexity.</span></p></td><td class="c1" colspan="1" rowspan="1"><p class="c0"><span class="c5">Can focus more on the purpose rather than the design.</span></p></td></tr></tbody></table><p class="c2"><span class="c5">&nbsp;</span></p><p class="c2"><span class="c5">Therefore, we have decided to use DialogFlow as for our NLP API.</span></p><p class="c2 c3"><span class="c4"></span></p><p class="c2"><span class="c6">14-11-2017</span></p><p class="c2 c3"><span class="c4"></span></p><p class="c2"><span class="c5">Initially we have decided to process the user requests in the botpress nodejs server it self. Since it is very time consuming and unreliable to do the NLP parts ourselves, we have decided to forward the all the input requests to dialogflow api and then extract the relevant parameters from the user request and make relevant actions through the botpress nodejs server.</span></p><p class="c2 c3"><span class="c5"></span></p><p class="c2"><span class="c5">But we found that &nbsp;we can easily connect the chatting clients directly to the dialogflow api. Therefore, we have changed the initial design of our project and omitted the botpress from the nodejs server since it is unnecessary.</span></p><p class="c2 c3"><span class="c5"></span></p><p class="c2"><span class="c5">The Basic Structure.</span></p><p class="c2 c3"><span class="c4"></span></p><p class="c2"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 283.50px; height: 231.72px;"><img alt="" src="images/image3.png" style="width: 283.50px; height: 231.72px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span></p><p class="c2 c3"><span class="c5"></span></p><p class="c2"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 608.00px; height: 221.00px;"><img alt="" src="images/image1.png" style="width: 608.00px; height: 221.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span></p><p class="c2 c3"><span class="c4"></span></p><p class="c2 c3"><span class="c5"></span></p><p class="c2"><span class="c6">16-11-2017</span></p><p class="c2 c3"><span class="c5"></span></p><p class="c2"><span class="c5">Implemented DialogFlow completely without using botpress. Easy to implement and we can integrate it with many platforms</span></p><p class="c2 c3"><span class="c5"></span></p><p class="c2"><span class="c5">Use followUp intents to format the response</span></p><p class="c2 c7"><span>Docs &nbsp;</span><span class="c11"><a class="c12" href="https://www.google.com/url?q=https://dialogflow.com/docs/events&amp;sa=D&amp;ust=1511282931467000&amp;usg=AFQjCNEr1nbMUKTlwUN2D-ifa3vCLGxxYw">https://dialogflow.com/docs/events</a></span></p><p class="c2 c3 c7"><span class="c5"></span></p><p class="c2"><span class="c6">21-11-2017</span></p><p class="c2 c3"><span class="c9"></span></p><p class="c2"><span>Upto now we did some background work, and have chosen the most suitable api and methods to use in our bot. From today onwards we will officially start to work on our chat bot </span><span class="c4">InfoBot</span></p><p class="c2 c3"><span class="c4"></span></p><p class="c2"><span class="c4">Step 1: Create intents in DialogFlow api</span></p><p class="c2 c3"><span class="c4"></span></p><p class="c2 c3"><span class="c5"></span></p>
-			
-			</div>
-		</div>
-    </div>
-	
-	
-	<div class="container-fluid onepage-section" id="project-team">
-		
-		<div class="row">
-			<div class="col text-center">
-				<h3 class="textcolor-white">Team</h3><br><br>
-			</div>
-		  </div>
-		
-		<div class="row">
-			<div class="col text-center">
-				<img src="graphics/chandima.jpg" class="img-responsive" width="200px"></img><br><br>
-				<h5 class="textcolor-white">Chandima B Samarasinghe<br></h5>	
-				<p class="textcolor-white">
+		<div class="col text-center committemember">
+			<img src="assests/chandima.jpg" class="img-thumbnail" alt="Cinque Terre" width="150px"> 
+			<div class="card-body">
+				<h6 class="card-title">Chandima B Samarasinghe</h6>
+				<p class="card-text">
 				
 				</p>
-			</div>
-			
-			<div class="col text-center">
-				<img src="graphics/sanoj.jpg" class="img-responsive" width="200px"></img><br><br>
-				<h5 class="textcolor-white">Sanoj Punchihewa<br></h5>	
-				<p class="textcolor-white">
-				
-				</p>
-			</div>
-			
-			<div class="col text-center">
-				<img src="graphics/yuvini.jpg" class="img-responsive" width="200px"></img><br><br>
-				<h5 class="textcolor-white">Yuvini Sumanasekara<br></h5>	
-				<p class="textcolor-white">
-				
-				</p>
-			</div>
-			
-		</div>
+				<a href="https://chandimab.github.io" class="card-link">github</a>
+				<a href="https://www.linkedin.com/in/chandimab" class="card-link">linkedin</a>
+				<a href="http://sausecode.com" class="card-link">web</a>
+				<a href="mailto:chandi2398@gmail.com" class="card-link">email</a>
+			 </div>
+        </div>
 		
-
+		<div class="col text-center committemember">
+			<img src="assests/sanoj.jpg" class="img-thumbnail" alt="Cinque Terre" width="150px"> 
+			<div class="card-body">
+				<h6 class="card-title">Sanoj Punchihewa</h6>
+				<p class="card-text">
+				
+				</p>
+				<a href="https://github.com/SanojPunchihewa" class="card-link">github</a>
+				<a href="#" class="card-link">linkedin</a>
+				<a href="mailto:sanoj.punchihewa@gmail.com " class="card-link">email</a>
+			 </div>
+        </div>
+		
+		<div class="col text-center committemember">
+			<img src="assests/yuvini.jpg" class="img-thumbnail" alt="Cinque Terre" width="150px"> 
+			<div class="card-body">
+				<h6 class="card-title">Yuvini Sumanasekara</h6>
+				<p class="card-text">
+				
+				</p>
+				<a href="https://github.com/yuvini06" class="card-link">github</a>
+				<a href="#" class="card-link">linkedin</a>
+				<a href="mailto:yuvini.s06@gmail.com" class="card-link">email</a>
+			 </div>
+        </div>
+		
+		
+		
+      </div>
+	  
+    
     </div>
 	
-	<div class="container-fluid onepage-section" id="project-refapi">
-		<div class="row">
-			<div class="col text-center">
-				<h3 class="textcolor-white">References and APIs</h3><br><br>
-			</div>
-		  </div>
+	<div class="container-fluid onepagesection sectioncontact" id="refapi">
+		<h5 class="titlepadding text-center">References and APIs</h5>
 		
-      <div class="row">
-	    
-			<a href="http://dialogflow.com" class="btn contactblock text-center col textcolor-white">
-			DialogFlow API
-			</a>
-			
-			
-		<!--div class="col text-center contactblock">
-          <p class="textcolor-white">email<br>dev.chandima@gmail.com</p>  
-        </div>
-		<div class="col text-center contactblock">
-          <p class="textcolor-white">facebook<br>https://www.facebook.com/chandima.b.samarasinghe</p>
-        </div>
-		<div class="col text-center contactblock">
-          <p class="textcolor-white">github<br>https://github.com/chandimab</p>  
-        </div>
-		<div class="col text-center contactblock">
-          <p class="textcolor-white">linkedin<br>https://www.linkedin.com/in/chandimab</p>
-        </div-->
-      </div>
     </div>
+	
+	
+	<div class="container-fluid footer text-center">
+		<p class="text-primary">CO227 Project - PeraChatBot</p>
+	</div>
+	
+	<button onclick="topFunction()" id="scrollupBtn" title="Go to top">&#9651;
+	</button>
+	<script>
+		// When the user scrolls down 400px from the top of the document, show the button
+		window.onscroll = function() {scrollFunction()};
 
+		function scrollFunction() {
+			if (document.body.scrollTop > 2000 || document.documentElement.scrollTop > 2000) {
+				document.getElementById("scrollupBtn").style.display = "block";
+			} else {
+				document.getElementById("scrollupBtn").style.display = "none";
+			}
+		}
+
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+			document.body.scrollTop = 0;
+			document.documentElement.scrollTop = 0;
+		}
+	</script>
+	
+	
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
+	<script src="vendor/bootstrap/js/smooth-scroll.js"></script>
+		
   </body>
 
 </html>
