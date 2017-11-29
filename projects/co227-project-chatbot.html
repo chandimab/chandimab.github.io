@@ -60,6 +60,15 @@
 	  
 	  .sectionoverview{
 		background-color:#000000;
+		padding-top:100px;
+		padding-left:50px;
+		padding-right:50px;
+		padding-bottom:100px;
+	  }
+	  .overview-text{
+		font-style: italic;
+		font-size: x-large;
+		color:#bbbbbb;
 	  }
 	  
 	  .sectionfunction{
@@ -149,6 +158,9 @@
 	  .sectionrefapi{
 		//height:100vh;
 		background-color:#000000;
+		padding-left:50px;
+		padding-right:50px;
+		padding-bottom:50px;
 	  }
 	  
 	  .footer{
@@ -198,11 +210,11 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
+            <!--li class="nav-item">
               <a class="nav-link" href="#">Home
                 <span class="sr-only">(current)</span>
               </a>
-            </li>
+            </li-->
             <li class="nav-item">
               <a class="nav-link" href="#overview">Overview</a>
             </li>
@@ -268,16 +280,22 @@
 	
     <div class="container onepagesection sectionoverview" id="overview">
       <h5 class="titlepadding text-center">Overview</h5>
+	  
+	  <p class="overview-text text-center">
+	  "PeraChatBot is an intelligent chabot capable of providing useful information to students and staff of the department, using realistic natural language responses, on conversational interfaces such as Facebook messenger, Viber or Twitter."
+	  </p>
     </div>
 	
 	<div class="container-fluid onepagesection sectionfunction" id="function">
       <h5 class="titlepadding text-center">Functional Description</h5>
 	  
-	  
+	  <p class="text-center">pending...</p>
     </div>
 	
 	<div class="container-fluid onepagesection sectionuxui" id="uxui">
 		<h5 class="titlepadding text-center">UX/UI</h5>
+		
+		<p class="text-center">pending...</p>
     </div>
 	
 	<div class="container-fluid onepagesection sectionmilestones" id="milestones">
@@ -316,7 +334,8 @@
 	
 	<div class="container-fluid onepagesection sectionconclusion" id="conclusion">
       <h5 class="titlepadding text-center">Conclusion</h5>
-  
+	
+		<p class="text-center">pending...</p>
     </div>
 	
 	<div class="container-fluid onepagesection sectionlog" id="log">
@@ -329,10 +348,9 @@
 			</div>
 			<div class="col-11 eventdesc-dark">
 				<h6 class="eventheader">Setup botpress.io / First Meeting with the Project owner</h6>
-				<p class="eventtext">Setup botpress.io and deploy  a sample chatbot. The sample bot was not connected to any messaging client. The sample bot perfectly worked.
-				</p>
+				<p class="eventtext">We setup botpress.io and deployed a sample chatbot while familiarising ourselves with the bot development platform. The sample bot was not connected to any messaging client. The sample bot worked perfectly.</p>
 				<p>
-				We had our first meeting with the project owner. We discussed about the main requirements of the project. The project owner asked us to provide a comparison of APIs we can use on 13th Nov 2017 (Milestone 0).
+				We had our first meeting with the project owner where we discussed about the main requirements of the project. We were asked to provide a comparison of the possible APIs we could use for the bot development by 13th November 2017 (Milestone 0).
 				</p>
 			</div>
 		</div>
@@ -570,11 +588,27 @@
 	<div class="container-fluid onepagesection sectionrefapi" id="refapi">
 		<h5 class="titlepadding text-center">References and APIs</h5>
 		
+		<blockquote class="blockquote">
+			<h6>DialogFlow API</h6>
+		  <p>Dialogflow (formerly Api.ai, Speaktoit) is a developer of human–computer interaction technologies based on natural language conversations.</p>
+		  <footer class="blockquote-footer">website <cite title="Source Title"><a href="https://dialogflow.com/">https://dialogflow.com/</a></cite></footer>
+		</blockquote>
+		
+		<blockquote class="blockquote">
+			<h6>Heroku</h6>
+		  <p>Heroku is a cloud platform as a service (PaaS) supporting several programming languages that is used as a web application deployment model. </p>
+		  <footer class="blockquote-footer">website <cite title="Source Title"><a href="https://www.heroku.com/">https://www.heroku.com/</a></cite></footer>
+		</blockquote>
+		
+		<br>
+		
+		
+		
     </div>
 	
 	
 	<div class="container-fluid footer text-center">
-		<p class="text-primary">CO227 Project - PeraChatBot | Last Updated  On 29 NOV 2017 @ 00:49</p>
+		<p class="text-primary">CO227 Project - PeraChatBot | Last Updated  On 29 NOV 2017 @ 23:55</p>
 	</div>
 	
 	<button onclick="topFunction()" id="scrollupBtn" title="Go to top">&#9651;
