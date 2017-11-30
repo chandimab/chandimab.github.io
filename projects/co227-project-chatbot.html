@@ -70,6 +70,16 @@
 		font-size: x-large;
 		color:#bbbbbb;
 	  }
+	  .function-text{
+		//font-style: italic;
+		font-size: large;
+		color:#bbbbbb;
+	  }
+	  .function-list-center{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	  }
 	  
 	  .sectionfunction{
 		background-color:#000000;
@@ -167,6 +177,10 @@
 		padding-top:30px;
 		padding-bottom:20px;
 		background-color:#000015;
+	  }
+	  
+	  .normaltext{
+		font-size: large;
 	  }
     </style>
 	
@@ -289,7 +303,19 @@
 	<div class="container-fluid onepagesection sectionfunction" id="function">
       <h5 class="titlepadding text-center">Functional Description</h5>
 	  
-	  <p class="text-center">pending...</p>
+		<p class="function-text">PeraChatBot is capable of converting the user’s text into structured data that is used to construct realistic natural language responses. As with all bots, PeraChatBot is restricted to its domain knowledge and therefore capable of responding to the following types of queries.
+		</p>
+		
+			<div class="">
+				<ol>
+					<li class="function-text">Time table queries</li>
+					<li class="function-text">Course content information</li>
+					<li class="function-text">Grades / GPA related queries</li>
+					<li class="function-text">Deadline notifications [Future Improvement]</li>
+				</ol>
+			</div>
+
+		<p class="function-text">PeraChatBot is supported on conversational interfaces such as Facebook Messenger, Viber or Twitter. As a future improvement we hope to develop a bilingual interface to enhance the user experience. </p>
     </div>
 	
 	<div class="container-fluid onepagesection sectionuxui" id="uxui">
@@ -530,6 +556,27 @@
 			</div>
 		</div>
 		
+		
+		<div class="row eventblock">
+			<div class="col-1 eventdate">
+				<p class="eventtextmonth">2017<br>NOV</p>
+				<h4 class="eventtextdate">29</h4>
+			</div>
+			<div class="col-11 eventdesc-dark">
+				<h6 class="eventheader">Setup DBMS and connected to the nodejs server</h6>
+				<p class="eventtext">
+				Initially we have planned to use google calendar to store time table information.But after discussed with the group members we have decided to store time table informations on main database as well.
+				</p>
+				<p class="eventtext">
+				Created user Information schema(table) in postgreSQL to store user user data.
+				</p>
+				<p class="eventtext">
+				Connected the node js server to it to store values at the signUp.
+				</p>
+				
+			</div>
+		</div>
+		
 
     </div>
 	
@@ -608,7 +655,7 @@
 	
 	
 	<div class="container-fluid footer text-center">
-		<p class="text-primary">CO227 Project - PeraChatBot | Last Updated  On 29 NOV 2017 @ 23:55</p>
+		<p class="text-primary">CO227 Project - PeraChatBot | Last Updated  On 30TH NOV 2017 @ 20:50</p>
 	</div>
 	
 	<button onclick="topFunction()" id="scrollupBtn" title="Go to top">&#9651;
