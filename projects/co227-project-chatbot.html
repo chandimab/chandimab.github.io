@@ -392,14 +392,13 @@
 			</div>
 			<div class="col-11 eventdesc-light">
 				<h6 class="eventheader">Project team meeting</h6>
-				<p class="eventtext">Project team gathered and discussed about the overall structure of the project and the things we need to workout before starting the actual implementation.
-				</p>
+				<p class="eventtext">The project team gathered and discussed about the overall structure of the project and the key issues we need to address before starting the actual implementation.</p>
 				<p>
 					<ul>
-					<li>DialogFlow API.</li>
-					<li>Nodejs, mysql connection implementation and querying.</li>
-					<li>Moodle database schema/structure.</li>
-					<li>What are the possible user authentication methods we can use.</li>
+					<li>Dialogflow – to build the conversational interface</li>
+					<li>Node.js, MySQL – for connection implementation and querying</li>
+					<li>Moodle – for the database schema/structure.</li>
+					<li>What are the possible user authentication methods we can use?</li>
 					<li>Botpress.io and email services integration.</li>
 					</ul>
 				</p>
@@ -430,13 +429,14 @@
 				<p class="eventtext">
 				<ul>
 					<li>Link <a href="https://dialogflow.com/">https://dialogflow.com/</a></li>
-					<li>Already built-in features (context and intents).</li>
+					<li>Already built-in features (context, intents, entities, existing knowledge bases etc).</li>
 					<li>Can focus more on the purpose rather than the design.</li>
 					<li>Can directly connect to chatting clients.</li>
 					</ul>
 				</p>
 				
-				<p class="eventtext">*** Therefore, we have decided to use DialogFlow as for our NLP API.</p>
+				<p class="eventtext">*** Given the time allocated for the project completion we decided to use Dialogflow as our NLP API tool.
+</p>
 			</div>
 		</div>
 		
@@ -448,16 +448,15 @@
 			</div>
 			<div class="col-11 eventdesc-light">
 				<h6 class="eventheader">Change of initial design</h6>
-				<p class="eventtext">Initially we have decided to process the user requests in the botpress nodejs server it self. Since it is very time consuming and unreliable to do the NLP parts ourselves, we have decided to forward the all the input requests to dialogflow api and then extract the relevant parameters from the user request and make relevant actions through the botpress nodejs server.</p>
-				<p>
+				<p class="eventtext">Initially we have decided to process the user requests in the botpress Node.js server itself. Since it is very time consuming and unreliable to handle NLP parts ourselves from scratch, we have decided to forward all the input requests to Dialogflow API and then extract the relevant parameters from the user request and make relevant actions through the botpress Node.js server.<p>
 				
-				<p class="eventtext">But we found that  we can easily connect the chatting clients directly to the dialogflow api. Therefore, we have changed the initial design of our project and omitted the botpress from the nodejs server since it is unnecessary.
+				<p class="eventtext">But we found that we can easily connect the chatting clients directly to Dialogflow. Therefore, we changed the initial design of our project and omitted botpress from the Node.js server since it is unnecessary.
+
 				</p>
 				<h6 class="eventheader">The Basic Structure</h6>
 				<br>
 				<p><img src="assests/logdata/2017-11-14-2.png" width="600px">
 				</p>
-				
 				
 			</div>
 		</div>
@@ -472,9 +471,11 @@
 			<div class="col-11 eventdesc-dark">
 				<h6 class="eventheader">DialogFlow Implementation</h6>
 				<p class="eventtext">
-				<ul><li>Implemented DialogFlow completely without using botpress. Easy to implement and we can integrate it with many platforms</li>
-					<li>Used followUp intents to format the response</li>
-					<li>Docs <a href="http://www.nltk.org/">http://www.nltk.org/</a></li>
+				<ul><li>Implemented Dialogflow completely without using botpress. We found out that it was easy to implement and that we can integrate it with many platforms (E.g. Facebook Messenger).
+					</li>
+					<li>We also learned that the feature; follow-up intents can be used to format the response so that process of building sample dialogs was easier and more visual.
+					</li>
+					<li>Docs <a href="https://dialogflow.com/docs/events"> https://dialogflow.com/docs/events</a></li>
 					</ul>
 				</p>
 			</div>
@@ -488,7 +489,8 @@
 			</div>
 			<div class="col-11 eventdesc-light">
 				<h6 class="eventheader">Officially started the project</h6>
-				<p class="eventtext">Upto now we did some background work, and have chosen the most suitable api and methods to use in our bot. From today onwards we will officially start to work on our chat bot InfoBot
+				<p class="eventtext">
+				Up to now we did some background work and have chosen the most suitable api and methods to use in our bot. From today onwards we will officially start to work on our chatbot PeraChatBot (development name : infoBot).
 				<p>
 				
 				<p class="eventtext">Step 1: Create intents in DialogFlow api</p>
@@ -504,7 +506,8 @@
 			<div class="col-11 eventdesc-dark">
 				<h6 class="eventheader">DialogFlow - student registration number identification error</h6>
 				<p class="eventtext">
-				We had a issue of correctly identifying the student registration number from the dialogflow api. Therefore, we have checked all the top most NLP apis to find whether we can find a better api that dialogflow api. Since we haven’t find a comparatively better api that dialogflow api, we have tackled the problem using different strategies using the dialogflow api. Now the issue was solved.
+				We had an issue of correctly identifying the student registration number from the Dialogflow API. We had to go back and reconsider our decision on using Dialogflow. We checked all the top most NLP-APIs to determine whether there was more suitable API than Dialogflow which might resolve the issue. Since we were unable to find a relatively better API than Dialogflow, we decided to approach the issue using a different strategy while continuing to use Dialogflow. Now the issue was solved.
+
 				</p>
 			</div>
 		</div>
@@ -518,11 +521,11 @@
 			<div class="col-11 eventdesc-light">
 				<h6 class="eventheader">Where to store time table details?</h6>
 				<p class="eventtext">
-				To store timetables we have decided to use google calendar feature, rather than implementing that in our database. We are going to use the google calendar API to do those manipulations.
+				To store timetables we have decided to use the Google calendar feature, rather than implementing that in our database. We are going to use the Google Calendar API to do those manipulations
 				<p>
 				<ul>
-				<li>Today we are going to get familiar with google calendar api.</li>
-				<li>We are going to use Heroku cloud services to deploy our nodejs application and the main database.</li>
+				<li>Today we are going to get familiar with Google Calendar API.</li>
+				<li>We are going to use Heroku cloud services to deploy our Node.js application and the main database.</li>
 				</ul>
 				
 			</div>
@@ -536,7 +539,8 @@
 			<div class="col-11 eventdesc-dark">
 				<h6 class="eventheader">DBMS and the nodejs Server</h6>
 				<p class="eventtext">
-				We are using PostgreSQL as our DBMS. (Since we deploy our server at Heroku and it supports PostgreSQL)
+				We are using PostgreSQL as our DBMS (since we deployed our server on Heroku which supports PostgreSQL)
+
 				</p>
 			</div>
 		</div>
@@ -550,7 +554,8 @@
 			<div class="col-11 eventdesc-light">
 				<h6 class="eventheader">Google Calender API</h6>
 				<p class="eventtext">
-				Successfully ran the sample code of google calendar api in a node js server.
+				Authentication of the Google Calendar API was completed. Successfully ran the sample code in a Node.js server.
+
 				<p>
 				<p>
 				However, to integrate google calendar api we have to put extra effort. Since, the semester time tables are the only thing we are going to put there we should discuss about that in next meetings whether we are proceed with google calender or use your databases to do that.
