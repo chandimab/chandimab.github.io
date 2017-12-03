@@ -711,11 +711,15 @@
 				<h6 class="eventheader">Implemented the Databases</h6>
 				<p class="eventtext">
 					<ul>
-						<li>Implemented the database schemas. Populated the database tables. Successfully connected the database with the main nodejs server.
+						<li>Implemented the database schemas.
 						</li>
-						<li>Implemented database manipulation functions in the nodejs server.
+						<li>Populated the database tables.
 						</li>
-						<li>Changed the getting started intent design and the webhook functions.
+						<li>Successfully connected the database with the main Node.js server.
+						</li>
+						<li>Implemented database manipulation functions in the Node.js server.
+						</li>
+						<li>Changed the ‘getting started’ intent design and the webhook functions.
 						</li>
 					</ul>
 				</p>
@@ -732,28 +736,63 @@
 				<h6 class="eventheader">Time table query implementation , Verification Procedure</h6>
 				<p class="eventtext">
 					<ul>
-						<li>Discussed about the verification procedure of linking of the facebook chatting client. 
-						</li>
+						<li>Discussed about the verification procedure required when integrating Facebook Messenger as a conversational interface.</li>
 						<li>Implemented the email verification functionality to link the facebook chatting client to the respective users.
 						</li>
-						<li>Implemented the time table query functions in the nodejs server with the help of PostgreSQL commands. Here as the first step we have completed the queries having only the time.
+						<li>Implemented the time table query functions in the Node.js server with the help of PostgreSQL commands. Here as the initial step we have completed the queries related to time only.</li>
 							<ul>
-								<li>Ex : "What do i have at 8 am ?"
+								<li>Ex : "What do I have at 8 a.m.?"
 								</li>
 								
-								<li>The bot will respond to this with the respective data given through the webhook
+								<li>The bot will respond to this with the respective data given through the webhook.</li>
+								
+								<li>Also if the user asks a question like ‘What do I have next?’’
+
 								</li>
 								
-								<li>Also if the user ask ‘Next what do i have ?’’
+								<li>The bot is capable of responding to that as well will (here the previous data that was stored in the server is used to maintain the context).
 								</li>
 								
-								<li>The bot will also respond to that (here the previous data that were stored in the server are used to maintain the context)
+								<li>We can go back also if we like.
 								</li>
 							</ul>
-						</li>
+						
 					</ul>
 				</p>
 								
+			</div>
+		</div>
+		
+		<div class="row eventblock">
+			<div class="col-1 eventdate">
+				<p class="eventtextmonth">2017<br>DEC</p>
+				<h4 class="eventtextdate">03</h4>
+			</div>
+			<div class="col-11 eventdesc-dark">
+				<h6 class="eventheader">Implemented the time table queries related to days.</h6>
+				<p class="eventtext">
+				Today we completed the queries having the day, eg
+					<ul>
+						<li>"What do i have on Friday ?"
+						</li>
+						<li>The bot will respond to this with the respective data given through the webhook
+						</li>
+						<li>Also the user can ask “Next” or “Previous” followed by 1st query.
+						</li>
+					</ul>
+				</p>
+				
+				<h6 class="eventheader">Implemented the chatting client verification method</h6>
+				<p class="eventtext">
+				Implemented email based verification functionality to link the facebook chatting client with the respective user accounts.
+					<ul>
+						<li>A very secure method, therefore only the particular user can access the information related to him.
+						</li>
+						<li>The verification method is realy easy to use.
+						</li>
+					</ul>
+				</p>
+				
 			</div>
 		</div>
 		
@@ -838,7 +877,7 @@
 	
 	
 	<div class="container-fluid footer text-center">
-		<p class="text-primary">CO227 Project - PeraChatBot | Last Updated  On 03RD DEC 2017 @ 00:55</p>
+		<p class="text-primary">CO227 Project - PeraChatBot | Last Updated  On 03RD DEC 2017 @ 22:55</p>
 	</div>
 	
 	<button onclick="topFunction()" id="scrollupBtn" title="Go to top">&#9651;
