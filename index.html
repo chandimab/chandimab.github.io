@@ -190,6 +190,220 @@
       </div>
 	  
 	  <div class="row">
+
+	
+			  
+	
+
+ <!-- new projects section -->
+<!-- jquery -->
+                  <style type="text/css">
+                    .hoverProject {}
+                    .hoverProject:hover {background: white;}
+                    .projectcontainer{padding: 30px;}
+                  </style>
+
+                  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+                  <script>
+                        $(document).ready(function() {
+                          //alert("ready");
+                          $(".projectcontainer").hide();
+                          //$(".projectcontainer").delay(200).show(500);//show all
+                          
+                          updateContainer5($("button[tag='All'")); //show all
+                          $("button[tag='All'").addClass("active") //select tag=all button
+
+                          $(".tags").click(function() { //listen to tags click
+                            //log($(this).text()); //getting the text relevent to the clicked tag
+                            $(".tags").removeClass("active");
+
+                            $(this).addClass("active"); //adds the class at the right button
+                            defaultTagNames();
+                            updateContainer5(this);
+                          });
+
+                        });
+
+                        //hover effect
+                        $(".hoverProject").hover(function(){
+                            $(this).css("background", "#f5f5f5");
+                        }, function(){
+                            $(this).css("background", "#fff");
+                        });
+
+                        function visitPage(url){
+                            window.location=url;
+                        }
+
+                        function log(msg){
+                          $("#msg").text(msg);
+                        }
+
+                        function defaultTagNames(){
+                          $("button[tag]").each(
+                              //iterate through each
+                              function(index){
+                                    var tag=$(this).attr("tag");
+                                    $(this).html(tag);
+                              }
+                          );
+                        }
+
+                        function updateContainer4(button_){
+                          var count=0;
+                          var tag=$(button_).attr("tag");
+
+                          if(tag=='All'){
+                            //$(".projectcontainer").delay(200).show(500);//show all
+                            $(".projectcontainer").each(
+                              //iterate through each
+                              function(index){
+                                    count=count+1;
+                                    $(this).delay(400).show(500); //show
+                                    $(button_).html(tag+" ("+count+")");
+                              }
+                            );
+
+                          }else{
+                            $(".projectcontainer").each(
+                              //iterate through each
+                              function(index){
+                                var attr_text=$(this).attr("tag");
+                                
+                                if(attr_text.indexOf(tag) != -1){
+                                    count=count+1;
+                                    $(this).delay(400).show(500);
+                                    $(button_).html(tag+"("+count+")");
+                                }else{
+                                  $(this).hide(400);
+
+                                }
+                              }
+
+                            );
+
+                          }
+                        }
+
+                        function updateContainer5(button_){
+                            //visitPage('https://sausecode.com/cv/#projects');
+                            
+                          var count=0;
+                          var tag=$(button_).attr("tag");
+
+                          if(tag=='All'){
+                            //$(".projectcontainer").delay(200).show(500);//show all
+                            $(".projectcontainer").each(
+                              //iterate through each
+                              function(index){
+                                    count=count+1;
+                                    $(this).delay(400).show(500); //show
+                                    $(button_).html(tag+" ("+count+")");
+                              }
+                            );
+
+                          }else{
+                            $(".projectcontainer").each(
+                              //iterate through each
+                              function(index){
+                                var attr_text=$(this).attr("tag");
+                                
+                                if(attr_text.indexOf(tag) != -1){
+                                    count=count+1;
+                                    $(this).delay(400).show(500);
+                                    $(button_).html(tag+"("+count+")");
+                                }else{
+                                    $(this).hide(400);
+                                    //$(button_).html(tag);
+                                }
+                              }
+
+                            );
+
+                          }
+                        }
+
+                  </script>
+                  
+<div class="py-5 d-flex align-items-center bg-light" id="projects" style="min-height:100% !important;">
+
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-12">
+          <h1 class="mb-4 text-dark">Projects</h1>
+          <p class="lead"></p>
+
+                <!-- project tags -->
+                <div class="col-md-12 text-center">
+                  Tags : 
+                  <button id="alltagbutton" type="button" class="btn btn-outline-dark btn-sm tags" tag="All">All</button>
+                  <button type="button" class="btn btn-outline-dark btn-sm tags" tag="Android Apps">Android Apps</button>
+                  <button type="button" class="btn btn-outline-dark btn-sm tags" tag="Web Development">Web Development</button>
+                  <button type="button" class="btn btn-outline-dark btn-sm tags" tag="ChatBot">ChatBot</button>
+                  <button type="button" class="btn btn-outline-dark btn-sm tags" tag="Desktop Apps">Desktop Apps</button>
+                  <button type="button" class="btn btn-outline-dark btn-sm tags" tag="Robotics">Robotics</button>
+                  <button type="button" class="btn btn-outline-dark btn-sm tags" tag="Embedded">Embedded</button>
+                  <button type="button" class="btn btn-outline-dark btn-sm tags" tag="Scripting">Scripting</button>
+                  <button type="button" class="btn btn-outline-dark btn-sm tags" tag="Game Development">Game Development</button>  
+                  
+                </div>
+
+                <br>
+
+              <!-- projects container -->
+              <div class="row">
+
+<?php
+  function printProject($title, $image, $description, $url, $tag){
+    echo '<div class="projectcontainer hoverProject col-md-4" tag="'.$tag.'"';
+
+    //if url is not empty
+    if($url!=''){
+      echo ' onclick="visitPage(\''.$url.'\');">';
+    }else{
+      echo '">';
+    }
+
+    echo '<img class="d-block mx-auto rounded img-fluid" src="'.$image.'" width="200">';
+    echo '<h3 class="mb-1 mt-1 text-dark"><b>'.$title.'</b></h3>';
+    echo '<p class="text-muted">'.$description.'</p></div>';
+  }
+
+  //read json
+  $str = file_get_contents('https://sausecode.com/cv/assets/projects.json');
+
+  //decode
+  $json = json_decode($str, true); // decode the JSON into an associative array
+
+  foreach ($json['projects'] as $field => $value) {
+    $title=$value['title']; $image=$value['image']; $description=$value['description'];
+    $url=$value['url']; $tag=$value['tag'];
+
+    printProject($title, $image, $description, $url, $tag);
+  }
+?>
+
+                
+                
+              </div>
+
+        </div>
+      </div>
+    </div>
+</div>
+
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
         <div class="col textcolor-white project-block">
 			<h5>CO227 Project - ChatBot</h5>
 			<p class="textcolor-white"><br>
